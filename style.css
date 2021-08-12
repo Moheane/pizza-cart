@@ -15,6 +15,14 @@ body{
 img{
     border-radius: .5em;
 }
+button{
+    border-radius: .4em;
+    
+}
+ button:hover{
+     background-color: var(--tertiary);
+ }
+
 .small > img{
     height: auto;
     width: 40%;
@@ -65,6 +73,37 @@ h3{
     color: var(--tertiary);
     margin: auto;
  
+}
+.cart{
+    background-color: var(--extra);
+    padding: 2em;
+    
+}
+.cart-header{
+    background-color: var(--tertiary);
+}
+.cart-block{
+ background-color: var(--secondary);
+ margin: 1rem;
+ 
+
+}
+.cart-wrap{
+    background-color: var(--secondary);
+    padding: 1rem;
+    text-align: center;
+}
+
+.cart-div-wrap{
+    display: flex;
+    background-color: var(--tertiary);
+    padding: 1em;
+    border-radius: 1em;
+    
+}
+
+h4{
+    padding-top: 2.4em;
 }
 
 @media only screen and(min-width: 60em) {
