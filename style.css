@@ -84,7 +84,7 @@ h3{
 }
 .cart-block{
  background-color: var(--secondary);
- margin: 1rem;
+ margin-top: 1em;
  
 
 }
@@ -104,6 +104,12 @@ h3{
 
 h4{
     padding-top: 2.4em;
+}
+
+.total{
+    background-color: var(--extra);
+    color: #e0fbfc;
+    font-weight: bold;
 }
 
 @media only screen and(min-width: 60em) {
