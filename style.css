@@ -17,6 +17,7 @@ img{
 }
 button{
     border-radius: .4em;
+    margin: 1em;
     
 }
  button:hover{
@@ -53,6 +54,9 @@ button{
     margin: .5em;
     padding-top: 1em;
     border-radius: 10px;
+    
+}
+.pizza{
     
 }
 
