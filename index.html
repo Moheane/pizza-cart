@@ -23,12 +23,14 @@
                     <div class="container cart-block cart-div-wrap">
                         <div class="cart-div">
                             <p>Small</p>
-                            <p>R13</p>
-                            <i class="fa fa-plus-circle" aria-hidden="true"></i>
-                            <i class="fa fa-minus-circle" aria-hidden="true"></i>                          
+                            <p>R15</p>
+                            <i class="fa fa-plus-circle small_plus" aria-hidden="true"></i>
+                            <i class="fa fa-minus-circle small_minus" aria-hidden="true"></i> 
+                            <i class="fa fa-refresh refresh" aria-hidden="true"></i>
+                         
                         </div>
                         <div class="cart-div center">
-                            <h4>Current: R125</h3>
+                            <h4>Current: R <span class="smallCurrent">0</span></h3>
                         </div>
                        
                     </div>
@@ -36,7 +38,7 @@
                         <div class="cart-div">
                             <p>Medium</p>
                             <p>R22</p>
-                            <i class="fa fa-plus-circle" aria-hidden="true"></i>
+                            <i class="fa fa-plus-circle medium_small" aria-hidden="true"></i>
                             <i class="fa fa-minus-circle" aria-hidden="true"></i>                          
                         </div>
                         <div class="cart-div center">
@@ -57,11 +59,11 @@
                        
                     </div>
             <div class="total">
-                <p class="total">Total = </p>
+                <p class="totalpar">Total = </p>
             </div>
                 
             <div class="cart-button">
-                <button class="btn">Checkout</button>
+                <button class="btn checkoutSmall">Checkout</button>
             </div>
         </div>
         <div class="row  center pizza">
@@ -123,5 +125,6 @@
                 
         </div>
     </div>
+    <script src="DOM.js"></script>
 </body>
 </html>
