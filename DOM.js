@@ -92,12 +92,15 @@ refresh_large.addEventListener("click", function () {
     
 })
 
-let check_small = document.querySelector(".mediumCurrent")
-let check_medium = document.querySelector(".largeCurrent")
-let check_large = document.querySelector(".refresh_medium")
+let check_small = document.querySelector(".smallCurrent")
+let check_medium = document.querySelector(".mediumCurrent")
+let check_large = document.querySelector(".largeCurrent")
 
 
 checkout.addEventListener("click", function () {
-    var totalCheck = check_small.value + check_medium.value + check_large.value
-    totalCkeckout.innerHTML = totalCheck
+  
+
+    
+    totalCkeckout.innerHTML = parseInt(check_small.innerHTML) + parseInt(check_medium.innerHTML) + parseInt(check_large.innerHTML)
+    
 })

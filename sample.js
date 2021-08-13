@@ -24,3 +24,13 @@ refresh_medium.addEventListener("click", function () {
     currentStringSetMedium.innerHTML = 0
     
 })
+
+let checkout = document.querySelector(".smallCurrent")
+let check_small = document.querySelector(".mediumCurrent")
+let check_medium = document.querySelector(".largeCurrent")
+let check_large = document.querySelector(".refresh_medium")
+
+checkout.addEventListener("click", function () {
+    var totalCheck = check_small.value + check_medium.value + check_large.value
+    
+})

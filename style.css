@@ -115,6 +115,12 @@ h4{
     color: #e0fbfc;
     font-weight: bold;
 }
+.totalCheckout{
+    color: var(--tertiary);
+}
+.totalpar > span{
+    color: var(--tertiary);
+}
 
 @media only screen and(min-width: 60em) {
 
