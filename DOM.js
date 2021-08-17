@@ -95,14 +95,13 @@ refresh_large.addEventListener("click", function () {
 let check_small = document.querySelector(".smallCurrent")
 let check_medium = document.querySelector(".mediumCurrent")
 let check_large = document.querySelector(".largeCurrent")
-let message = document.querySelector(".message")
+
 
 checkout.addEventListener("click", function () {
   
-
-    
+    totalBtn.classList.remove("hidden")
     totalCkeckout.innerHTML = parseInt(check_small.innerHTML) + parseInt(check_medium.innerHTML) + parseInt(check_large.innerHTML)
-    message.classList.remove("hidden")
+    
 })
 
 
@@ -149,4 +148,17 @@ medium_remove.addEventListener("click", function () {
 
 large_remove.addEventListener("click", function () {
     cart_large.classList.add("hidden")
+})
+
+
+let totalBtn = document.querySelector(".totalBtn")
+let enjoy = document.querySelector(".enjoy")
+
+totalBtn.addEventListener("click", function () {
+    var message = "ENJOY YOUR MEAL"
+    enjoy.innerHTML = message
+    alert(message)
+    cart_wrap.classList.add("hidden")
+    
+    
 })

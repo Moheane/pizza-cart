@@ -56,3 +56,11 @@ buyBtnLarge.addEventListener("click", function () {
     cart_large.classList.remove("hidden")
     
 })
+
+let totalBtn = document.querySelector(".totalBtn")
+
+totalBtn.addEventListener("click", function () {
+    cart_small.classList.remove("hidden")
+    cart_wrap.classList.add("hidden")
+    
+})
