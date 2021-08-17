@@ -126,3 +126,22 @@ buyBtnLarge.addEventListener("click", function () {
     cart_large.classList.remove("hidden")
     
 })
+
+
+let small_remove = document.querySelector(".small_remove")
+let medium_remove = document.querySelector(".medium_remove")
+let large_remove = document.querySelector(".large_remove")
+
+small_remove.addEventListener("click", function () {
+    cart_small.classList.add("hidden")
+    
+})
+
+medium_remove.addEventListener("click", function () {
+    cart_small.classList.add("hidden")
+    
+})
+
+large_remove.addEventListener("click", function () {
+    cart_small.classList.add("hidden")
+})
