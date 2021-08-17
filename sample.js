@@ -34,3 +34,25 @@ checkout.addEventListener("click", function () {
     var totalCheck = check_small.value + check_medium.value + check_large.value
     
 })
+
+
+let buyBtnLarge = document.querySelector(".buyBtnLarge")
+let buyBtnMedium = document.querySelector(".buyBtnMedium")
+let buyBtnSmall = document.querySelector(".buyBtnSmall")
+
+let cart_small = document.querySelector(".cart-small")
+let cart_medium = document.querySelector(".cart-medium")
+let cart_large = document.querySelector(".cart-large")
+
+buyBtnSmall.addEventListener("click", function () {
+    cart_small.classList.remove("hidden")
+    
+})
+buyBtnMedium.addEventListener("click", function () {
+    cart_medium.classList.remove("hidden")
+    
+})
+buyBtnLarge.addEventListener("click", function () {
+    cart_large.classList.remove("hidden")
+    
+})
