@@ -95,14 +95,14 @@ refresh_large.addEventListener("click", function () {
 let check_small = document.querySelector(".smallCurrent")
 let check_medium = document.querySelector(".mediumCurrent")
 let check_large = document.querySelector(".largeCurrent")
-
+let message = document.querySelector(".message")
 
 checkout.addEventListener("click", function () {
   
 
     
     totalCkeckout.innerHTML = parseInt(check_small.innerHTML) + parseInt(check_medium.innerHTML) + parseInt(check_large.innerHTML)
-    
+    message.classList.remove("hidden")
 })
 
 
@@ -113,17 +113,22 @@ let buyBtnSmall = document.querySelector(".buyBtnSmall")
 let cart_small = document.querySelector(".cart-small")
 let cart_medium = document.querySelector(".cart-medium")
 let cart_large = document.querySelector(".cart-large")
+let cart_wrap = document.querySelector(".cart-wrap")
+
 
 buyBtnSmall.addEventListener("click", function () {
     cart_small.classList.remove("hidden")
+    cart_wrap.classList.remove("hidden")
     
 })
 buyBtnMedium.addEventListener("click", function () {
     cart_medium.classList.remove("hidden")
+    cart_wrap.classList.remove("hidden")
     
 })
 buyBtnLarge.addEventListener("click", function () {
     cart_large.classList.remove("hidden")
+    cart_wrap.classList.remove("hidden")
     
 })
 
@@ -138,10 +143,10 @@ small_remove.addEventListener("click", function () {
 })
 
 medium_remove.addEventListener("click", function () {
-    cart_small.classList.add("hidden")
+    cart_medium.classList.add("hidden")
     
 })
 
 large_remove.addEventListener("click", function () {
-    cart_small.classList.add("hidden")
+    cart_large.classList.add("hidden")
 })

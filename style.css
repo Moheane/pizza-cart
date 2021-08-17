@@ -125,6 +125,23 @@ h4{
 .hidden{
     display: none;
 }
+
+.intro-order{
+    background-color: var(--primary);
+    color: var(--secondary);
+    padding: 1rem;
+    margin: 1rem;
+}
+
+.message{
+    background-color: yellowgreen;
+   
+}
+.enjoy{
+    font-weight: bolder;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
 @media only screen and(min-width: 60em) {
 
 
