@@ -30,6 +30,8 @@ small_minus.addEventListener("click", function () {
 refresh_small.addEventListener("click", function () {
     let curr = currentStringSet.value
     currentStringSet.innerHTML = 0
+    currentTotal = 0
+    
     
 })
 
@@ -57,6 +59,7 @@ medium_minus.addEventListener("click", function () {
 
 refresh_medium.addEventListener("click", function () {
     currentStringSetMedium.innerHTML = 0
+    currentTotal1 = 0
     
 })
 
@@ -89,6 +92,7 @@ large_minus.addEventListener("click", function () {
 
 refresh_large.addEventListener("click", function () {
     currentStringSetlarge.innerHTML = 0
+    currentTotal2 = 0
     
 })
 
@@ -138,16 +142,22 @@ let large_remove = document.querySelector(".large_remove")
 
 small_remove.addEventListener("click", function () {
     cart_small.classList.add("hidden")
+    currentTotal = 0
+    currentStringSet.innerHTML = 0
     
 })
 
 medium_remove.addEventListener("click", function () {
     cart_medium.classList.add("hidden")
+    currentTotal1 = 0
+    currentStringSetMedium.innerHTML = 0
     
 })
 
 large_remove.addEventListener("click", function () {
     cart_large.classList.add("hidden")
+    currentTotal2 = 0
+    currentStringSetlarge.innerHTML = 0
 })
 
 
