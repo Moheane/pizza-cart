@@ -99,12 +99,16 @@ refresh_large.addEventListener("click", function () {
 let check_small = document.querySelector(".smallCurrent")
 let check_medium = document.querySelector(".mediumCurrent")
 let check_large = document.querySelector(".largeCurrent")
-
+let amount = document.querySelector(".amount")
+let amountTotal = document.querySelector(".amountTotal")
 
 checkout.addEventListener("click", function () {
   
     totalBtn.classList.remove("hidden")
-    totalCkeckout.innerHTML = parseInt(check_small.innerHTML) + parseInt(check_medium.innerHTML) + parseInt(check_large.innerHTML)
+    checkout.classList.add("hidden")
+    amount.classList.remove("hidden")
+    let tt = parseInt(check_small.innerHTML) + parseInt(check_medium.innerHTML) + parseInt(check_large.innerHTML)
+    totalCkeckout.innerHTML = tt
     
 })
 
@@ -117,21 +121,26 @@ let cart_small = document.querySelector(".cart-small")
 let cart_medium = document.querySelector(".cart-medium")
 let cart_large = document.querySelector(".cart-large")
 let cart_wrap = document.querySelector(".cart-wrap")
+let intro_order = document.querySelector(".intro-order")
+
 
 
 buyBtnSmall.addEventListener("click", function () {
     cart_small.classList.remove("hidden")
     cart_wrap.classList.remove("hidden")
+    intro_order.classList.add("hidden")
     
 })
 buyBtnMedium.addEventListener("click", function () {
     cart_medium.classList.remove("hidden")
     cart_wrap.classList.remove("hidden")
+    intro_order.classList.add("hidden")
     
 })
 buyBtnLarge.addEventListener("click", function () {
     cart_large.classList.remove("hidden")
     cart_wrap.classList.remove("hidden")
+    intro_order.classList.add("hidden")
     
 })
 
@@ -162,13 +171,23 @@ large_remove.addEventListener("click", function () {
 
 
 let totalBtn = document.querySelector(".totalBtn")
+let message = document.querySelector(".message")
 let enjoy = document.querySelector(".enjoy")
 
+
 totalBtn.addEventListener("click", function () {
-    var message = "ENJOY YOUR MEAL"
-    enjoy.innerHTML = message
-    alert(message)
-    cart_wrap.classList.add("hidden")
+    let mes = "Enjoy your Meal! your change is :R"+(parseFloat(amountTotal.value)-parseFloat(totalCkeckout.innerHTML))
+    let mes2 = "Not enough money! you need R"+(parseFloat(totalCkeckout.innerHTML)-parseFloat(amountTotal.value)+" more to comlete the transaction")
+    console.log(mes2)
     
+    if (parseFloat(totalCkeckout.innerHTML) < parseFloat(amountTotal.value)) {
+        message.classList.remove("hidden")
+        totalBtn.classList.add("hidden")
+        amount.classList.add("hidden")
+        enjoy.innerHTML = mes
+    } else {
+        enjoy.innerHTML = mes2
+        message.classList.remove("hidden")
+    }
     
 })
