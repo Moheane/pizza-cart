@@ -175,7 +175,7 @@ let message = document.querySelector(".message")
 let enjoy = document.querySelector(".enjoy")
 
 
-totalBtn.addEventListener("click", function () {
+totalBtn.addEventListener("click",  function () {
     let mes = "Enjoy your Meal! your change is :R"+(parseFloat(amountTotal.value)-parseFloat(totalCkeckout.innerHTML))
     let mes2 = "Not enough money! you need R"+(parseFloat(totalCkeckout.innerHTML)-parseFloat(amountTotal.value)+" more to comlete the transaction")
     console.log(mes2)
