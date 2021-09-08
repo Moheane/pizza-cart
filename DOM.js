@@ -174,6 +174,7 @@ large_remove.addEventListener("click", function () {
 let totalBtn = document.querySelector(".totalBtn")
 let message = document.querySelector(".message")
 let enjoy = document.querySelector(".enjoy")
+let total = document.querySelector(".total")
 
 
 totalBtn.addEventListener("click",  function () {
@@ -186,9 +187,23 @@ totalBtn.addEventListener("click",  function () {
         totalBtn.classList.add("hidden")
         amount.classList.add("hidden")
         enjoy.innerHTML = mes
+
+        cart_small.classList.add("hidden")
+        currentTotal = 0
+        currentStringSet.innerHTML = 0
+        totalCkeckout.innerHTML = 0
+        cart_medium.classList.add("hidden")
+        currentTotal1 = 0
+        currentStringSetMedium.innerHTML = 0
+        cart_large.classList.add("hidden")
+        currentTotal2 = 0
+        currentStringSetlarge.innerHTML = 0
+        total.classList.add("hidden")
     } else {
         enjoy.innerHTML = mes2
         message.classList.remove("hidden")
+
+        
     }
     
 })
