@@ -153,20 +153,21 @@ small_remove.addEventListener("click", function () {
     cart_small.classList.add("hidden")
     currentTotal = 0
     currentStringSet.innerHTML = 0
-    
+    totalCkeckout.innerHTML = 0
 })
 
 medium_remove.addEventListener("click", function () {
     cart_medium.classList.add("hidden")
     currentTotal1 = 0
     currentStringSetMedium.innerHTML = 0
-    
+    totalCkeckout.innerHTML = 0
 })
 
 large_remove.addEventListener("click", function () {
     cart_large.classList.add("hidden")
     currentTotal2 = 0
     currentStringSetlarge.innerHTML = 0
+    totalCkeckout.innerHTML = 0
 })
 
 
